@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Nilai Siswa</title>
+</head>
+<body>
+
+    <h1>Program Menghitung Nilai Siswa</h1>
+
+    <script>
+        // Membuat variabel
+        let nama = "Andi";
+        let nilaiTugas = 80;
+        let nilaiUTS = 75;
+        let nilaiUAS = 90;
+
+        // Menghitung nilai akhir
+        let nilaiAkhir =
+            (nilaiTugas * 30 / 100) +
+            (nilaiUTS * 30 / 100) +
+            (nilaiUAS * 40 / 100);
+
+        // Menentukan status kelulusan
+        let status;
+
+        if (nilaiAkhir >= 75) {
+            status = "LULUS";
+        } else {
+            status = "TIDAK LULUS";
+        }
+
+        // Menampilkan hasil di console
+        console.log("Nama: " + nama);
+        console.log("Nilai Akhir: " + nilaiAkhir);
+        console.log("Status: " + status);
+
+        // Menampilkan hasil di halaman web
+        document.write("Nama: " + nama + "<br>");
+        document.write("Nilai Akhir: " +
+            nilaiAkhir.toLocaleString("id-ID") + "<br>");
+        document.write("Status: " + status);
+    </script>
+
+</body>
+</html>
